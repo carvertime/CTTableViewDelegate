@@ -12,5 +12,5 @@
 
 @property (nonatomic, weak) id delegate;
 - (void)updateWithCellData:(id)data atIndexPath:(NSIndexPath *)indexPath;
-
++ (CGFloat)getHeightWithCellData:(id)data;
 @end

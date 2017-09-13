@@ -11,5 +11,7 @@
 @implementation CTTableViewCell
 
 - (void)updateWithCellData:(id)data atIndexPath:(NSIndexPath *)indexPath{}
-
++ (CGFloat)getHeightWithCellData:(id)data{
+    return 0;
+};
 @end
