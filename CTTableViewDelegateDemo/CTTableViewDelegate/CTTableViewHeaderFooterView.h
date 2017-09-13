@@ -12,5 +12,5 @@
 
 @property (nonatomic, assign) id delegate;
 - (void)updateWithCellData:(id)data;
-
++ (CGFloat)getHeightWithCellData:(id)data;
 @end

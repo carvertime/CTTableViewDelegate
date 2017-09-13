@@ -11,5 +11,7 @@
 @implementation CTTableViewHeaderFooterView
 
 - (void)updateWithCellData:(id)data{}
-
++ (CGFloat)getHeightWithCellData:(id)data{
+    return 0;
+}
 @end
