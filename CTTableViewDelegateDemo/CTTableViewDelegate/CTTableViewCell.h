@@ -10,4 +10,7 @@
 
 @interface CTTableViewCell : UITableViewCell
 
+@property (nonatomic, weak) id delegate;
+- (void)updateWithCellData:(id)data atIndexPath:(NSIndexPath *)indexPath;
+
 @end

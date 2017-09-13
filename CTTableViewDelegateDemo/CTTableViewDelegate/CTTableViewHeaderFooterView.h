@@ -10,4 +10,7 @@
 
 @interface CTTableViewHeaderFooterView : UITableViewHeaderFooterView
 
+@property (nonatomic, assign) id delegate;
+- (void)updateWithCellData:(id)data;
+
 @end

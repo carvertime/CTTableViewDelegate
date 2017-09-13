@@ -11,14 +11,14 @@
 @class CTTableViewRow;
 @class CTTableViewSection;
 
-@interface CTTableViewDelegate : NSObject
+@interface CTTableViewDelegate : NSObject<UITableViewDelegate,UITableViewDataSource>
 
 @property (nonatomic, strong) NSMutableArray <CTTableViewSection *>*sections;
 
 @property (nonatomic, weak) id owner;
 
 - (CTTableViewRow *)getHeaderAtIndex:(NSInteger)index;
-- (CTTableViewRow *)getItemAtIndexPath:(NSIndexPath *)indexPath;
+- (CTTableViewRow *)getRowAtIndexPath:(NSIndexPath *)indexPath;
 - (CTTableViewRow *)getFooterAtIndex:(NSInteger)index;
 - (CTTableViewSection *)getSectionAtIndex:(NSInteger)index;
 
