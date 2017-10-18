@@ -11,6 +11,7 @@
 #import "CTTableViewSection.h"
 #import "CTTableViewCell.h"
 #import "CTTableViewHeaderFooterView.h"
+#import "CTTableActionProtocol.h"
 
 @implementation CTTableViewDelegate
 
@@ -75,6 +76,14 @@
     footer.delegate = self;
     [footer updateWithCellData:row];
     return footer;
+}
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    [tableView deselectRowAtIndexPath:indexPath animated:YES];
+    CTTableViewRow *row = [self getRowAtIndexPath:indexPath];
+    if ([self respondsToSelector:@selector(tableView:didSelectRow:)]) {
+        [(id<CTTableActionProtocol>)self tableView:tableView didSelectRow:row];
+    }
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section{

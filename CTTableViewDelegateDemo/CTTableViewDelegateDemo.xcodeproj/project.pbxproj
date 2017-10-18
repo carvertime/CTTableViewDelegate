@@ -40,6 +40,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		690DC6211F975159005A2A3A /* CTTableActionProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CTTableActionProtocol.h; sourceTree = "<group>"; };
 		69B2AAF41F68DAEE00F11638 /* CTTableViewDelegateDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CTTableViewDelegateDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		69B2AAF81F68DAEE00F11638 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		69B2AAFA1F68DAEE00F11638 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -159,6 +160,7 @@
 		69B2AB2A1F68DB1E00F11638 /* CTTableViewDelegate */ = {
 			isa = PBXGroup;
 			children = (
+				690DC6211F975159005A2A3A /* CTTableActionProtocol.h */,
 				69B2AB2E1F68DB4500F11638 /* CTTableViewRow.h */,
 				69B2AB2F1F68DB4500F11638 /* CTTableViewRow.m */,
 				69B2AB311F68DB5400F11638 /* CTTableViewSection.h */,
@@ -554,6 +556,7 @@
 				69B2AB231F68DAEE00F11638 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		69B2AB241F68DAEE00F11638 /* Build configuration list for PBXNativeTarget "CTTableViewDelegateDemoTests" */ = {
 			isa = XCConfigurationList;
@@ -562,6 +565,7 @@
 				69B2AB261F68DAEE00F11638 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		69B2AB271F68DAEE00F11638 /* Build configuration list for PBXNativeTarget "CTTableViewDelegateDemoUITests" */ = {
 			isa = XCConfigurationList;
@@ -570,6 +574,7 @@
 				69B2AB291F68DAEE00F11638 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
