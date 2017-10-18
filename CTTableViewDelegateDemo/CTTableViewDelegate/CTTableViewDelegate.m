@@ -45,7 +45,9 @@
 
 - (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section{
     CTTableViewRow *row = [self getHeaderAtIndex:section];
-    NSAssert([row isKindOfClass:CTTableViewRow.class], @"row=%@", row);
+    if (row == nil) {
+        return [UIView new];
+    }
     CTTableViewHeaderFooterView *header = [tableView dequeueReusableHeaderFooterViewWithIdentifier:row.identifier];
     NSAssert(header != nil, @"cell should not be nil, identifier=%@",row.identifier);
     header.delegate = self;
@@ -65,7 +67,9 @@
 
 - (UIView *)tableView:(UITableView *)tableView viewForFooterInSection:(NSInteger)section{
     CTTableViewRow *row = [self getFooterAtIndex:section];
-    NSAssert([row isKindOfClass:CTTableViewRow.class], @"row=%@", row);
+    if (row == nil) {
+        return [UIView new];
+    }
     CTTableViewHeaderFooterView *footer = [tableView dequeueReusableHeaderFooterViewWithIdentifier:row.identifier];
     NSAssert(footer != nil, @"cell should not be nil, identifier=%@",row.identifier);
     footer.delegate = self;
